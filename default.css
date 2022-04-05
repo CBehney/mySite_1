@@ -17,12 +17,13 @@ p {
 
 /* Classes */
 .picture_label {
-  color: rgb(211, 211, 211);
+  color: rgb(44, 44, 44);
+  font-style: italic;
 }
 
 
 
-
+/* Learning Information */
 /* This is an id -- Use if only needed ONCE on page */
 #id_name {
   font-family: 'Impact';
