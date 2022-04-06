@@ -1,0 +1,21 @@
+* {
+    font-family: sans-serif;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 2 ease-out;
+    transform: scale();
+}
+
+div:hover {
+    /* width: 200px; */
+    transform: scale(1.1);
+}
+
+/* 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); } 
+*/

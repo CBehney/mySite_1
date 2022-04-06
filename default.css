@@ -6,37 +6,54 @@ body {
   background-color: rgb(211, 211, 211);
 }
 
-h1 {
-  color: rgb(0, 0, 0);
+H1{
+  color: black;
 }
 
-p {
-  color: rgb(236, 130, 9);
 
+
+
+
+/* Flex */
+.flex-mainWin {
+  /* We first create a flex layout context */
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(134, 134, 134);
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: left;
+
+  padding: 8px;
+  margin: 5px;
+  height: 50%;
+  list-style: none;
 }
+
+.flex-item {
+  background: tomato;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  /* text-align: center;*/
+} 
 
 /* Classes */
+.parent {
+  display: flex;
+  height: 300px;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
 .picture_label {
   color: rgb(44, 44, 44);
   font-style: italic;
 }
-
-
-
-/* Learning Information */
-/* This is an id -- Use if only needed ONCE on page */
-#id_name {
-  font-family: 'Impact';
-  color: red;
-  font-size: 25px;
-}
-
-/* This is a class -- Use applicable multiple times */
-.class_name {
-  font-family: 'Impact';
-  color: red;
-  font-size: 25px;
-}
-
-/* <p id="id_name"><p>Sample Text</p>
-<p class="class_name">Sample Text</p>  */

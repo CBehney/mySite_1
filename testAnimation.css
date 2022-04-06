@@ -1,0 +1,21 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* @keyframes is called a rule */
+@keyframes example {
+
+    /* from {background-color: red;}
+    to {background-color: yellow;} */
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
