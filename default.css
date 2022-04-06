@@ -6,7 +6,7 @@ body {
   background-color: rgb(211, 211, 211);
 }
 
-H1{
+H1 {
   color: black;
 }
 
@@ -15,31 +15,41 @@ H1{
 
 
 /* Flex */
-.flex-mainWin {
+.flex-container {
   /* We first create a flex layout context */
   display: flex;
   flex-wrap: nowrap;
   background-color: rgb(134, 134, 134);
 
   /* Then we define how is distributed the remaining space */
-  justify-content: left;
+  justify-content: space-evenly;
+  flex-direction: row;
 
+  height: 50px;
   padding: 8px;
   margin: 5px;
-  height: 50%;
   list-style: none;
 }
 
 .flex-item {
-  background: tomato;
+  height: 25px;
+  flex-basis: 200px;
+  background: rgb(224, 190, 79);
   border: 5px;
   border-width: 5px;
   border-color: black;
   padding: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
+  text-align: center;
+
   /* text-align: center;*/
-} 
+}
+
+.flex-item:hover {
+  /* width: 200px; */
+  transform: scale(1.2);
+}
 
 /* Classes */
 .parent {
